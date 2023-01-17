@@ -519,8 +519,14 @@ footer p{
     section p{
         font-size: 100%;
     }
+    .tarifs_h3{
+        font-size: 85%;
+    }
+    .infos_tarifs{
+        font-size: 85%;
+    }
     .tarifs6 p{
-        font-size: 62%;
+        font-size: 60%;
     }
     .contact_h2{
         font-size: 85%;

@@ -1,0 +1,683 @@
+/* ------------------------------ Document de style css ------------------------------ */
+
+/* ------------------------------   Styles principaux   ------------------------------ */
+@font-face{     /* Police de caractère */
+    font-family: "DCC - Sharp Distress Black";
+    src: url("../fonts/Segoe print");
+}
+@keyframes glisse{      /* Animation sur div id="gliss_num" (voir plus bas, ligne 376)*/
+    0%{
+        margin-left: 0%;
+    }
+    100%{
+        margin-left: 100%;
+    }
+}
+/**{
+    border: 1px solid green;
+}*/
+body{
+    font-family: "Segoe print";
+    margin: 0;
+    padding: 0;
+}
+/* ------------------------------      En-tête      ------------------------------ */
+header{
+    display: flex;
+    position: fixed; /* Pour fixer la navbar (Non défilement: reste en haut de page)*/
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: #d06334;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2; /* Pour que la navbar reste au premier plan */
+}
+#logo{
+    width: 9.4%;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 5%;
+    margin: 1%;
+}
+/* ------------------------------ Barre de navigation ------------------------------ */
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.nav_liens{
+    text-decoration: none;
+    color: white;
+    font-size: 120%;
+    font-weight: bold;
+    margin-right: 2em;
+}
+#no_marg{
+    margin-right: 0;
+}
+#souligne{
+    border-bottom: 2px solid white;
+}
+.nav_liens:hover{   /* Effet au survol de la sourie */
+    border-bottom: 2px solid white;
+}
+/* ------------------------------         Main         ------------------------------ */
+/* ------------------------------ Accueil (index.html) ------------------------------ */
+#ensemble{  /* index.html (ligne 34) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#b6392e, #d06334);
+    color: white;
+    font-size: 150%;
+}
+#border{    /* index.html (ligne 35) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    border: 1px solid white;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+#accueil_h1, #accueil_h2{ /* index.html (lignes 36 et 37) */
+    text-align: center;
+    color: white;
+}
+#patchwork_images{      /* index.html (ligne 41) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 2%;
+}
+.photos_accueil{    /* index.html (lignes 42 à 45) */
+    width: 21%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 9px 3px #585858;
+}
+#sky{       /* index.html (ligne 42) */
+    transform: rotate(25deg);   /*Pour pencher photo vers droite*/
+    margin-right: 2%;
+}
+#photoAcc1{     /* index.html (ligne 43) */
+    transform: rotate(-10deg);  /*Pour pencher photo vers gauche*/
+    z-index: 1;
+    margin-right: 2%;
+    width: 18%;
+}
+#sunsky{        /* index.html (ligne 44) */
+    transform: rotate(-25deg);  /*Pour pencher photo vers gauche*/
+    margin-right: 2%;
+    width: 18%;
+}
+#photoAcc2{     /* index.html (ligne 45) */
+    transform: rotate(20deg);   /*Pour pencher photo vers droite*/
+    z-index: -1;
+    width: 25%;
+}
+#accueil{       /* index.html (ligne 47) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#accueil p{     /* index.html (lignes 48 à 52) */
+    text-align: center;
+    margin-left: 1%;
+    margin-right: 1%;
+    font-size: 120%;
+}
+/* ---------------------------- Education (index1.html) ------------------------------ */
+.decal{     /* index1.html (lignes 45 et 46) */
+    margin-left: 8%;
+}
+/* ---------------------------- Rééducation (index2.html) ---------------------------- */
+.photos_reeduc1{        /* index2.html (ligne 36) */
+    width: 30%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 9px 3px #585858;
+}
+/* ------------------------------ Balades (index3.html) ------------------------------ */
+.tarif_balade{      /* index3.html (lignes 41 et 47) */
+    display: flex;
+    justify-content: flex-start;
+}
+.tarif_balade p{        /* index3.html (lignes 43 à 54) */
+    margin-top: 1.8%;
+    margin-left: 6%;
+}
+.italique{      /* index3.html (lignes 49 et 54) */
+    font-style: italic;
+}
+/* ------------------------------ Tarifs (index5.html) ------------------------------ */
+#tarifs_h2{     /* index5.html (ligne 35) */
+    margin-left: 3%;
+    margin-right: 3%;
+    display: flex;
+    justify-content: center;
+    border-top: 1.5px solid black;
+    border-left: 1.5px solid black;
+    border-right: 1.5px solid black;
+    margin-top: 6%;
+    margin-bottom: 0;
+}
+#espace{        /* index5.html (ligne 35) */
+    margin-left: 1%;
+}
+main h3, p{     /* index5.html (lignes 39, 43, 48, 52, 57, 61, 68, 72, 77 et 81) */
+    align-self: center;
+}
+.bloc_tarifs1, .bloc_tarifs2{   /* index5.html (lignes 36 et 65) */
+    margin-left: 3%;
+    margin-right: 3%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1.5px solid black;
+    border-left: 1.5px solid black;
+    border-right: 1.5px solid black;
+}
+.bloc_tarifs2{      /* index5.html (ligne 65) */
+    border-bottom: 1.5px solid black;
+}
+.tarifs_h3{     /* index5.html (lignes 39, 48, 57, 68 et 77) */
+    text-decoration: none;
+}
+.tarifs1, .tarifs2, .tarifs3, .tarifs4, .tarifs5, .tarifs6{     /* index5.html (ligneS 37, 46, 55, 66, 75 et 84) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.3%;
+    height: 75%;
+}
+.tarifs1, .tarifs2, .tarifs4, .tarifs5{     /* index5.html (ligneS 37, 46, 66 et 75) */
+    border-right: 1.5px solid black;
+}
+.tarifs6{       /* index5.html (ligne 84) */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.tarifs6 p{     /* index5.html (ligne 85 à 88) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3%;
+}
+        /* ----------------------- Placement des photos ----------------------*/
+#card1, #card2, #card3, #card4, #card5{     /* index5.html (lignes 38, 47, 56, 67 et 76) */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#overflow_hidden1{      /* index5.html (ligne 40) */
+    position: relative;
+    overflow: hidden;
+    padding-top: 90%;                       /*La photo se place dans le padding*/
+}
+#overflow_hidden1 img{      /* index5.html (ligne 41) */
+    width: 100%;
+}
+.photos_tarifs1{        /* index5.html (ligne 41) */
+    position: absolute;
+    left: 50%;                              /*Méthode pour centrer la photo*/
+    top: 50%;                               /**/
+    transform: translate(-50%, -50%);       /**/
+}
+#overflow_hidden2{      /* index5.html (ligne 49) */
+    position: relative;
+    overflow: hidden;
+    padding-top: 90%;                       /*La photo se place dans le padding*/
+}
+#overflow_hidden2 img{      /* index5.html (ligne 50) */
+    width: 100%;
+}
+.photos_tarifs2{        /* index5.html (ligne 50) */
+    position: absolute;
+    left: 50%;                              /*Méthode pour cadrer la photo*/
+    top: 62%;                               /**/
+    transform: translate(-50%, -50%);       /**/
+}
+#overflow_hidden3{      /* index5.html (ligne 58) */
+    position: relative;
+    overflow: hidden;
+    padding-top: 90%;                       /*La photo se place dans le padding*/
+}
+#overflow_hidden3 img{      /* index5.html (ligne 59) */
+    width: 100%;
+}
+.photos_tarifs3{        /* index5.html (ligne 59) */
+    position: absolute;
+    left: 50%;                              /*Méthode pour cadrer la photo*/
+    top: 55%;                               /**/
+    transform: translate(-50%, -50%);       /**/
+}
+#overflow_hidden4{      /* index5.html (ligne 69) */
+    position: relative;
+    overflow: hidden;
+    padding-top: 90%;                       /*La photo se place dans le padding*/
+}
+#overflow_hidden4 img{      /* index5.html (ligne 70) */
+    width: 100%;
+}
+.photos_tarifs4{        /* index5.html (ligne 70) */
+    position: absolute;
+    left: 50%;                              /*Méthode pour cadrer la photo*/
+    top: 60%;                               /**/
+    transform: translate(-50%, -50%);       /**/
+}
+#overflow_hidden5{      /* index5.html (ligne 78) */
+    position: relative;
+    overflow: hidden;
+    padding-top: 90%;                       /*La photo se place dans le padding*/
+}
+#overflow_hidden5 img{      /* index5.html (ligne 79) */
+    width: 100%;
+}
+.photos_tarifs5{        /* index5.html (ligne 79) */
+    position: absolute;
+    left: 50%;                              /*Méthode pour cadrer la photo*/
+    top: 65%;                               /**/
+    transform: translate(-50%, -50%);       /**/
+}
+/* -------------------------------------------------------------------*/
+#alma{      /* index5.html (ligne 91) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+.alma{      /* index5.html (lignes 87,88 et 92) */
+    text-decoration: underline;
+}
+/* ------------------------------ Contact (index6.html) ------------------------------ */
+#photo_contact{ /* index6.html (ligne 36) */
+    width: 40%;
+}
+#contact{   /* index6.html (ligne 38) */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 0;
+}
+#infos_contact{ /* index6.html (ligne 39) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+.contact_h2{    /* index6.html (lignes 40 et 47) */
+    font-size: 100%;
+}
+#map_contact{   /* index6.html (ligne 46) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+}
+#map{   /* index6.html (ligne 48) */
+    width: 75%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 9px 3px #585858;
+}
+#mailto{    /* index6.html (ligne 52) */
+    width: 20%;
+    margin-bottom: 5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-decoration: none;
+    background: linear-gradient(#b6392e, #d06334);
+    border: 3px solid white;
+    border-radius: 5em;
+    box-shadow: 0px 0px 9px 3px #585858;
+    color: white;
+}
+#mailto:hover{  /* index6.html (ligne 52) */    /*Effet au survol de la sourie*/
+    transform: scale(1.1);
+    box-shadow: 0px 0px 9px 5px #585858;
+}
+/* --------------------------- Mentions légales (index7.html) ------------------------- */
+.articles{                  /**/
+    margin-bottom: 0;       /**/
+}                           /* index7.html (lignes 37 à 63) */
+.ml{                        /**/
+    margin-top: 0;          /**/
+}
+.credits{                   /* index7.html (lignes 71, 75, 79, ... et 135) */
+    display: flex;
+    /*justify-content: flex-start;*/
+    align-items: center;
+    margin-bottom: 1%;
+}
+.credits_photos{            /* index7.html (lignes 72, 76, 80, ... et 136) */
+    width: 5%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 9px 3px #585858;
+    margin-right: 1%;
+}
+.credits a{                 /* index7.html (lignes 73, 77, 81, ... et 137) */
+    text-decoration: none;
+    color: black;
+}
+/*--------------------------- Styles communs à toutes les pages -----------------------*/
+h1{
+    color: #b6392e;
+    align-self: center;
+    z-index: 1;
+}
+main{
+    border: 3px solid #b6392e;
+    margin: 0.2%;
+    margin-top: 11.5%;
+    display: flex;
+    flex-direction: column;
+}
+#glisse_num{
+    display: flex;
+    width: fit-content;
+    margin-top: 0.4%;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: #585858;
+    box-shadow: 0px 0px 9px 3px #585858;
+    color: white;
+    transform: translateX(-100%);
+    white-space: nowrap;
+    animation: glisse 800ms 500ms ease-in-out forwards;    /* Animation (voir plus haut, ligne 8)*/
+}
+section h2, h3{
+    text-decoration: underline;
+}
+.photos{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1%;
+}
+.photos_{
+    width: 25%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 9px 3px #585858;
+}
+section{
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-bottom: 4%;
+}
+/* ------------------------------        Footer        ------------------------------ */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2%;
+    background: linear-gradient(#d06334, #b6392e);
+    color: white;
+}
+#footer_border{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 99%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    border: 1px solid white;
+}
+.footer_div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+footer h3{
+    text-decoration: underline;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    margin: 0;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+footer p{
+    margin: 0;
+}
+/*----------- Responsive Tablettes - paysage (max-width 1024px)--------------*/
+@media all and (max-width: 1024px){
+    #logo{
+        width: 8%;
+    }
+    .nav_liens{
+        font-size: 110%;
+    }
+    main{
+        margin-top: 10.5%;
+    }
+    .tarifs6 p{
+        font-size: 93%;
+    }
+}
+/*----------- Responsive Tablettes - Portrait (max-width 915px)--------------*/
+@media all and (max-width: 916px){
+    .nav_liens{
+        font-size: 83%;
+    }
+    main{
+        margin-top: 10.5%;
+    }
+    .tarifs_h3{
+        font-size: 95%;
+    }
+    .infos_tarifs{
+        font-size: 95%;
+    }
+    .tarifs6 p{
+        font-size: 69%;
+    }
+    footer h3{
+        font-size: 90%;
+    }
+    footer a{
+        font-size: 90%;
+    }
+    footer p{
+        font-size: 90%;
+    }
+}
+/*----------- Responsive Mobiles - Paysage (max-width 900px)--------------*/
+@media all and (max-width: 900px){
+    .nav_liens{
+        font-size: 71%;
+    }
+    #ensemble{
+        font-size: 110%;
+    }
+    #glisse_num{
+        font-size: 80%;
+    }
+    #sky{
+        margin-right: 2%;
+    }
+    #photoTest1{
+        margin-right: 2%;
+    }
+    #sunsky{
+        margin-right: 2%;
+    }
+    section p{
+        font-size: 100%;
+    }
+    .tarifs6 p{
+        font-size: 62%;
+    }
+    .contact_h2{
+        font-size: 85%;
+    }
+    #contact p{
+        font-size: 80%;
+    }
+    footer h3{
+        font-size: 80%;
+    }
+    footer a{
+        font-size: 80%;
+    }
+    #reseaux_soc img{
+        width: 20%;
+    }
+    footer p{
+        font-size: 80%;
+    }
+}
+/*----------- Responsive Mobiles - Portrait (max-width 650px)--------------*/
+@media all and (max-width: 650px){
+    header{
+        justify-content: space-around;
+        padding-bottom: 1%;
+    }
+    #logo{
+        width: 35%;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 0;
+    }
+    li{
+        height: 1.3em;
+        font-size: 80%;
+    }
+    .nav_liens{
+        font-size: 70%;
+        margin: 0;
+    }
+    main{
+        margin-top: 42.5%;
+    }
+    #ensemble{
+        font-size: 75%;
+    }
+    #glisse_num{
+        font-size: 60%;
+    }
+    #sky{
+        margin-right: 1%;
+    }
+    #photoTest1{
+        margin-right: 1%;
+    }
+    #sunsky{
+        margin-right: 1%;
+    }
+    section p{
+        font-size: 80%;
+    }
+    section h2, h3{
+        font-size: 80%;
+    }
+    #contact{
+        flex-direction: column;
+    }
+    #infos_contact{
+        width: 80%;
+        margin-top: 5%;
+    }
+    #map_contact{
+        width: 80%;
+        margin-top: 5%;
+    }
+    #mailto{
+        width: 40%;
+    }
+    .tarif_balade p{
+        margin-top: 3%;
+        font-size: 70%;
+    }
+    #tarifs_h2{
+        font-size: 80%;
+    }
+    .tarifs_h3{
+        font-size: 60%;
+    }
+    .infos_tarifs{
+        font-size: 55%;
+    }
+    .tarifs6 p{
+        font-size: 38%;
+        margin-left: 3%;
+        margin-top: 0.5%;
+    }
+    #footer_border{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer h3{
+        font-size: 70%;
+        margin-bottom: 0;
+    }
+    footer a{
+        font-size: 60%;
+    }
+    footer p{
+        font-size: 60%;
+    }
+}
+/*----------- Responsive Mobiles - Portrait (max-width 320px)--------------*/
+@media all and (max-width: 320px){
+    main{
+        margin-top: 47.5%;
+    }
+    .tarifs_h3{
+        font-size: 49%;
+    }
+    .infos_tarifs{
+        font-size: 47%;
+    }
+    .tarifs6 p{
+        font-size: 20%;
+        margin-left: 1%;
+        margin-top: 0;
+    }
+    #alma p{
+        font-size: 80%;
+    }
+}
+/*----------- Responsive Mobiles - Portrait (max-width 280px)--------------*/
+@media all and (max-width: 280px){
+    main{
+        margin-top: 54.5%;
+    }
+    .tarifs_h3{
+        font-size: 42%;
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+    .infos_tarifs{
+        font-size: 40%;
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+    .tarifs6 p{
+        font-size: 10%;
+        margin-left: 1%;
+        margin-top: 0;
+    }
+    #alma p{
+        font-size: 80%;
+    }
+    #mailto{
+        width: 60%;
+    }
+}

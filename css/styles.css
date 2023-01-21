@@ -570,7 +570,7 @@ footer p{
         margin: 0;
     }
     main{
-        margin-top: 42.5%;
+        margin-top: 38.5%;
     }
     #ensemble{
         font-size: 75%;
@@ -657,30 +657,10 @@ footer p{
         font-size: 80%;
     }
 }
-/*----------- Responsive Mobiles - Portrait (max-width 320px)--------------*/
-@media all and (max-width: 320px){
-    main{
-        margin-top: 47.5%;
-    }
-    .tarifs_h3{
-        font-size: 49%;
-    }
-    .infos_tarifs{
-        font-size: 47%;
-    }
-    .tarifs6 p{
-        font-size: 20%;
-        margin-left: 1%;
-        margin-top: 0;
-    }
-    #alma p{
-        font-size: 80%;
-    }
-}
 /*----------- Responsive Mobiles - Portrait (max-width 280px)--------------*/
 @media all and (max-width: 280px){
     main{
-        margin-top: 54.5%;
+        margin-top: 43.5%;
     }
     .tarifs_h3{
         font-size: 42%;

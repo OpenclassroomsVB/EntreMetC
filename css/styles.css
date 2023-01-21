@@ -640,6 +640,23 @@ footer p{
         font-size: 60%;
     }
 }
+/*----------- Responsive Mobiles - Portrait (max-width 380px)--------------*/
+@media all and (max-width: 380px){
+    .tarifs_h3{
+        font-size: 49%;
+    }
+    .infos_tarifs{
+        font-size: 47%;
+    }
+    .tarifs6 p{
+        font-size: 20%;
+        margin-left: 1%;
+        margin-top: 0;
+    }
+    #alma p{
+        font-size: 80%;
+    }
+}
 /*----------- Responsive Mobiles - Portrait (max-width 320px)--------------*/
 @media all and (max-width: 320px){
     main{

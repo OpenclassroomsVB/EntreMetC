@@ -399,6 +399,14 @@ main{
     white-space: nowrap;
     animation: glisse 800ms 500ms ease-in-out forwards;    /* Animation (voir plus haut, ligne 8)*/
 }
+#glisse_num [x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+    }
 section h2, h3{
     text-decoration: underline;
 }

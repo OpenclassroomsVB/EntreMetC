@@ -5,7 +5,7 @@
     font-family: 'indie_flowerregular';
     src: url('../fonts/IndieFlower-webfont.eot');
     src: url('../fonts/IndieFlower-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/IndieFlower-webfont.woff2') format('woff2'),
+         /*url('../fonts/IndieFlower-webfont.woff2') format('woff2'),*/
          url('../fonts/IndieFlower-webfont.woff') format('woff'),
          url('../fonts/IndieFlower-webfont.ttf') format('truetype'),
          url('../fonts/IndieFlower-webfont.svg#indie_flowerregular') format('svg');
@@ -13,6 +13,42 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'comic_reliefregular';
+    src: url('../fonts/ComicRelief-webfont.eot');
+    src: url('../fonts/ComicRelief-webfont.eot?#iefix') format('embedded-opentype'),
+         /*url('../fonts/ComicRelief-webfont.woff2') format('woff2'),*/
+         url('../fonts/ComicRelief-webfont.woff') format('woff'),
+         url('../fonts/ComicRelief-webfont.ttf') format('truetype'),
+         url('../fonts/ComicRelief-webfont.svg#comic_reliefregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'komika_textregular';
+    src: url('../fonts/KOMTXT__-webfont.eot');
+    src: url('../fonts/KOMTXT__-webfont.eot?#iefix') format('embedded-opentype'),
+         /*url('../fonts/KOMTXT__-webfont.woff2') format('woff2'),*/
+         url('../fonts/KOMTXT__-webfont.woff') format('woff'),
+         url('../fonts/KOMTXT__-webfont.ttf') format('truetype'),
+         url('../fonts/KOMTXT__-webfont.svg#komika_textregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'salsaregular';
+    src: url('../fonts/Salsa-Regular-webfont.eot');
+    src: url('../fonts/Salsa-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         /*url('../fonts/Salsa-Regular-webfont.woff2') format('woff2'),*/
+         url('../fonts/Salsa-Regular-webfont.woff') format('woff'),
+         url('../fonts/Salsa-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Salsa-Regular-webfont.svg#salsaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /*@font-face{     /* Police de caractère */
     /*font-family: "DCC - Sharp Distress Black";
     src: url("../fonts/Segoe print");
@@ -29,7 +65,8 @@
     border: 1px solid green;
 }*/
 body{
-    font-family: "indie_flowerregular";
+    font-family: "comic_reliefregular";
+    /*font-weight: bold;*/
     margin: 0;
     padding: 0;
 }
@@ -78,7 +115,7 @@ nav ul{
 }
 /* ------------------------------         Main         ------------------------------ */
 /* ------------------------------ Accueil (index.html) ------------------------------ */
-#ensemble{  /* index.html (ligne 34) */
+#ensemble{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,7 +123,7 @@ nav ul{
     color: white;
     font-size: 150%;
 }
-#border{    /* index.html (ligne 35) */
+#border{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,78 +133,81 @@ nav ul{
     margin-top: 0.5%;
     margin-bottom: 0.5%;
 }
-#accueil_h1, #accueil_h2{ /* index.html (lignes 36 et 37) */
+#accueil_h1, #accueil_h2{
     text-align: center;
     color: white;
 }
-#patchwork_images{      /* index.html (ligne 41) */
+#patchwork_images{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 0;
     margin-bottom: 2%;
 }
-.photos_accueil{    /* index.html (lignes 42 à 45) */
+.photos_accueil{
     width: 21%;
     border: 3px solid white;
     box-shadow: 0px 0px 9px 3px #585858;
 }
-#sky{       /* index.html (ligne 42) */
+#sky{
     transform: rotate(25deg);   /*Pour pencher photo vers droite*/
     margin-right: 2%;
 }
-#photoAcc1{     /* index.html (ligne 43) */
+#photoAcc1{
     transform: rotate(-10deg);  /*Pour pencher photo vers gauche*/
     z-index: 1;
     margin-right: 2%;
     width: 18%;
 }
-#sunsky{        /* index.html (ligne 44) */
+#sunsky{
     transform: rotate(-25deg);  /*Pour pencher photo vers gauche*/
     margin-right: 2%;
     width: 18%;
 }
-#photoAcc2{     /* index.html (ligne 45) */
+#photoAcc2{
     transform: rotate(20deg);   /*Pour pencher photo vers droite*/
     z-index: -1;
     width: 25%;
 }
-#accueil{       /* index.html (ligne 47) */
+#accueil{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#accueil p{     /* index.html (lignes 48 à 52) */
+#accueil p{
     text-align: center;
     margin-left: 1%;
     margin-right: 1%;
     font-size: 120%;
 }
 /* ---------------------------- Education (index1.html) ------------------------------ */
-.decal{     /* index1.html (lignes 45 et 46) */
+.decal{
     margin-left: 8%;
 }
 /* ---------------------------- Rééducation (index2.html) ---------------------------- */
-.photos_reeduc1{        /* index2.html (ligne 36) */
+.photos_reeduc1{
     width: 30%;
     border: 3px solid white;
     box-shadow: 0px 0px 9px 3px #585858;
 }
 /* ------------------------------ Balades (index3.html) ------------------------------ */
-.tarif_balade{      /* index3.html (lignes 41 et 47) */
+.tarif_balade{
     display: flex;
     justify-content: flex-start;
 }
-.tarif_balade p{        /* index3.html (lignes 43 à 54) */
+.tarif_balade p{
     margin-top: 1.8%;
     margin-left: 6%;
 }
-.italique{      /* index3.html (lignes 49 et 54) */
+.italique{
     font-style: italic;
 }
 /* ------------------------------ Tarifs (index5.html) ------------------------------ */
-#tarifs_h2{     /* index5.html (ligne 35) */
+#tarifs{
+    align-items: center;
+}
+#tarifs_h2{
     margin-left: 3%;
     margin-right: 3%;
     display: flex;
@@ -177,14 +217,15 @@ nav ul{
     border-right: 1.5px solid black;
     margin-top: 6%;
     margin-bottom: 0;
+    width: 60%;
 }
-#espace{        /* index5.html (ligne 35) */
+#espace{
     margin-left: 1%;
 }
-main h3, p{     /* index5.html (lignes 39, 43, 48, 52, 57, 61, 68, 72, 77 et 81) */
+main h3, p{
     align-self: center;
 }
-.bloc_tarifs1, .bloc_tarifs2{   /* index5.html (lignes 36 et 65) */
+.bloc_tarifs1, .bloc_tarifs2{
     margin-left: 3%;
     margin-right: 3%;
     display: flex;
@@ -192,158 +233,121 @@ main h3, p{     /* index5.html (lignes 39, 43, 48, 52, 57, 61, 68, 72, 77 et 81)
     border-top: 1.5px solid black;
     border-left: 1.5px solid black;
     border-right: 1.5px solid black;
+    width: 60%;
 }
-.bloc_tarifs2{      /* index5.html (ligne 65) */
+.bloc_tarifs2{
     border-bottom: 1.5px solid black;
+    margin-bottom: 5%;
 }
-.tarifs_h3{     /* index5.html (lignes 39, 48, 57, 68 et 77) */
+.tarifs_h3{
     text-decoration: none;
 }
-.tarifs1, .tarifs2, .tarifs3, .tarifs4, .tarifs5, .tarifs6{     /* index5.html (ligneS 37, 46, 55, 66, 75 et 84) */
+.tarifs1, .tarifs2, .tarifs4, .tarifs5{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 33.3%;
+    width: 50%;
     height: 75%;
 }
-.tarifs1, .tarifs2, .tarifs4, .tarifs5{     /* index5.html (ligneS 37, 46, 66 et 75) */
+.tarifs1, .tarifs4{
     border-right: 1.5px solid black;
 }
-.tarifs6{       /* index5.html (ligne 84) */
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-.tarifs6 p{     /* index5.html (ligne 85 à 88) */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 3%;
-}
         /* ----------------------- Placement des photos ----------------------*/
-#card1, #card2, #card3, #card4, #card5{     /* index5.html (lignes 38, 47, 56, 67 et 76) */
+#card1, #card2, #card4, #card5{
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-#overflow_hidden1{      /* index5.html (ligne 40) */
+#overflow_hidden1{
     position: relative;
     overflow: hidden;
     padding-top: 90%;                       /*La photo se place dans le padding*/
 }
-#overflow_hidden1 img{      /* index5.html (ligne 41) */
+#overflow_hidden1 img{
     width: 100%;
 }
-.photos_tarifs1{        /* index5.html (ligne 41) */
+.photos_tarifs1{
     position: absolute;
     left: 50%;                              /*Méthode pour centrer la photo*/
     top: 50%;                               /**/
     transform: translate(-50%, -50%);       /**/
 }
-#overflow_hidden2{      /* index5.html (ligne 49) */
+#overflow_hidden2{
     position: relative;
     overflow: hidden;
     padding-top: 90%;                       /*La photo se place dans le padding*/
 }
-#overflow_hidden2 img{      /* index5.html (ligne 50) */
+#overflow_hidden2 img{
     width: 100%;
 }
-.photos_tarifs2{        /* index5.html (ligne 50) */
+.photos_tarifs2{
     position: absolute;
     left: 50%;                              /*Méthode pour cadrer la photo*/
     top: 62%;                               /**/
     transform: translate(-50%, -50%);       /**/
 }
-#overflow_hidden3{      /* index5.html (ligne 58) */
+#overflow_hidden4{
     position: relative;
     overflow: hidden;
     padding-top: 90%;                       /*La photo se place dans le padding*/
 }
-#overflow_hidden3 img{      /* index5.html (ligne 59) */
+#overflow_hidden4 img{
     width: 100%;
 }
-.photos_tarifs3{        /* index5.html (ligne 59) */
-    position: absolute;
-    left: 50%;                              /*Méthode pour cadrer la photo*/
-    top: 55%;                               /**/
-    transform: translate(-50%, -50%);       /**/
-}
-#overflow_hidden4{      /* index5.html (ligne 69) */
-    position: relative;
-    overflow: hidden;
-    padding-top: 90%;                       /*La photo se place dans le padding*/
-}
-#overflow_hidden4 img{      /* index5.html (ligne 70) */
-    width: 100%;
-}
-.photos_tarifs4{        /* index5.html (ligne 70) */
+.photos_tarifs4{
     position: absolute;
     left: 50%;                              /*Méthode pour cadrer la photo*/
     top: 60%;                               /**/
     transform: translate(-50%, -50%);       /**/
 }
-#overflow_hidden5{      /* index5.html (ligne 78) */
+#overflow_hidden5{
     position: relative;
     overflow: hidden;
     padding-top: 90%;                       /*La photo se place dans le padding*/
 }
-#overflow_hidden5 img{      /* index5.html (ligne 79) */
+#overflow_hidden5 img{
     width: 100%;
 }
-.photos_tarifs5{        /* index5.html (ligne 79) */
+.photos_tarifs5{
     position: absolute;
     left: 50%;                              /*Méthode pour cadrer la photo*/
     top: 65%;                               /**/
     transform: translate(-50%, -50%);       /**/
 }
 /* -------------------------------------------------------------------*/
-#alma{      /* index5.html (ligne 91) */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4%;
-    margin-bottom: 4%;
-}
-.alma{      /* index5.html (lignes 87,88 et 92) */
-    text-decoration: underline;
-}
+
 /* ------------------------------ Contact (index6.html) ------------------------------ */
-#photo_contact{ /* index6.html (ligne 36) */
+#photo_contact{
     width: 40%;
 }
-#contact{   /* index6.html (ligne 38) */
+#contact{
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-left: 0;
 }
-#infos_contact{ /* index6.html (ligne 39) */
+#infos_contact{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 30%;
 }
-.contact_h2{    /* index6.html (lignes 40 et 47) */
+.contact_h2{
     font-size: 100%;
 }
-#map_contact{   /* index6.html (ligne 46) */
+#map_contact{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     width: 40%;
 }
-#map{   /* index6.html (ligne 48) */
+#map{
     width: 75%;
     border: 3px solid white;
     box-shadow: 0px 0px 9px 3px #585858;
 }
-#mailto{    /* index6.html (ligne 52) */
+#mailto{
     width: 20%;
     margin-bottom: 5%;
     padding-top: 0.5%;
@@ -358,30 +362,29 @@ main h3, p{     /* index5.html (lignes 39, 43, 48, 52, 57, 61, 68, 72, 77 et 81)
     box-shadow: 0px 0px 9px 3px #585858;
     color: white;
 }
-#mailto:hover{  /* index6.html (ligne 52) */    /*Effet au survol de la sourie*/
+#mailto:hover{          /*Effet au survol de la sourie*/
     transform: scale(1.1);
     box-shadow: 0px 0px 9px 5px #585858;
 }
 /* --------------------------- Mentions légales (index7.html) ------------------------- */
-.articles{                  /**/
-    margin-bottom: 0;       /**/
-}                           /* index7.html (lignes 37 à 63) */
-.ml{                        /**/
-    margin-top: 0;          /**/
+.articles{
+    margin-bottom: 0;
 }
-.credits{                   /* index7.html (lignes 71, 75, 79, ... et 135) */
+.ml{
+    margin-top: 0;
+}
+.credits{
     display: flex;
-    /*justify-content: flex-start;*/
     align-items: center;
     margin-bottom: 1%;
 }
-.credits_photos{            /* index7.html (lignes 72, 76, 80, ... et 136) */
+.credits_photos{
     width: 5%;
     border: 3px solid white;
     box-shadow: 0px 0px 9px 3px #585858;
     margin-right: 1%;
 }
-.credits a{                 /* index7.html (lignes 73, 77, 81, ... et 137) */
+.credits a{
     text-decoration: none;
     color: black;
 }
@@ -412,12 +415,12 @@ main{
     animation: glisse 800ms 500ms ease-in-out forwards;    /* Animation (voir plus haut, ligne 8)*/
 }
 #glisse_num [x-apple-data-detectors] {
-    color: inherit !important;
+    color: white !important;
     text-decoration: none !important;
-    font-size: inherit !important;
+    /*font-size: inherit !important;
     font-family: inherit !important;
     font-weight: inherit !important;
-    line-height: inherit !important;
+    line-height: inherit !important;*/
     }
 section h2, h3{
     text-decoration: underline;
@@ -460,7 +463,7 @@ footer{
     flex-direction: column;
     text-align: center;
 }
-footer h3{
+footer h3, .siege{
     text-decoration: underline;
 }
 footer a{

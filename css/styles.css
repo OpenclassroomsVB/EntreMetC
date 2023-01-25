@@ -1,10 +1,22 @@
 /* ------------------------------ Document de style css ------------------------------ */
 
 /* ------------------------------   Styles principaux   ------------------------------ */
-@font-face{     /* Police de caractère */
-    font-family: "DCC - Sharp Distress Black";
-    src: url("../fonts/Segoe print");
+@font-face {
+    font-family: 'indie_flowerregular';
+    src: url('../fonts/IndieFlower-webfont.eot');
+    src: url('../fonts/IndieFlower-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/IndieFlower-webfont.woff2') format('woff2'),
+         url('../fonts/IndieFlower-webfont.woff') format('woff'),
+         url('../fonts/IndieFlower-webfont.ttf') format('truetype'),
+         url('../fonts/IndieFlower-webfont.svg#indie_flowerregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
+/*@font-face{     /* Police de caractère */
+    /*font-family: "DCC - Sharp Distress Black";
+    src: url("../fonts/Segoe print");
+}*/
 @keyframes glisse{      /* Animation sur div id="gliss_num" (voir plus bas, ligne 376)*/
     0%{
         margin-left: 0%;
@@ -17,7 +29,7 @@
     border: 1px solid green;
 }*/
 body{
-    font-family: "Segoe print";
+    font-family: "indie_flowerregular";
     margin: 0;
     padding: 0;
 }

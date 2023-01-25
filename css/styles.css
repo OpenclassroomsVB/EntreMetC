@@ -2,18 +2,6 @@
 
 /* ------------------------------   Styles principaux   ------------------------------ */
 @font-face {
-    font-family: 'indie_flowerregular';
-    src: url('../fonts/IndieFlower-webfont.eot');
-    src: url('../fonts/IndieFlower-webfont.eot?#iefix') format('embedded-opentype'),
-         /*url('../fonts/IndieFlower-webfont.woff2') format('woff2'),*/
-         url('../fonts/IndieFlower-webfont.woff') format('woff'),
-         url('../fonts/IndieFlower-webfont.ttf') format('truetype'),
-         url('../fonts/IndieFlower-webfont.svg#indie_flowerregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
     font-family: 'comic_reliefregular';
     src: url('../fonts/ComicRelief-webfont.eot');
     src: url('../fonts/ComicRelief-webfont.eot?#iefix') format('embedded-opentype'),
@@ -37,18 +25,17 @@
 
 }
 @font-face {
-    font-family: 'salsaregular';
-    src: url('../fonts/Salsa-Regular-webfont.eot');
-    src: url('../fonts/Salsa-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         /*url('../fonts/Salsa-Regular-webfont.woff2') format('woff2'),*/
-         url('../fonts/Salsa-Regular-webfont.woff') format('woff'),
-         url('../fonts/Salsa-Regular-webfont.ttf') format('truetype'),
-         url('../fonts/Salsa-Regular-webfont.svg#salsaregular') format('svg');
+    font-family: 'cadmanitalic';
+    src: url('../fonts/Cadman_Italic-webfont.eot');
+    src: url('../fonts/Cadman_Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         /*url('../fonts/Cadman_Italic-webfont.woff2') format('woff2'),*/
+         url('../fonts/Cadman_Italic-webfont.woff') format('woff'),
+         url('../fonts/Cadman_Italic-webfont.ttf') format('truetype'),
+         url('../fonts/Cadman_Italic-webfont.svg#cadmanitalic') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
-
 /*@font-face{     /* Police de caractère */
     /*font-family: "DCC - Sharp Distress Black";
     src: url("../fonts/Segoe print");
@@ -65,7 +52,7 @@
     border: 1px solid green;
 }*/
 body{
-    font-family: "comic_reliefregular";
+    font-family: "cadmanitalic";
     /*font-weight: bold;*/
     margin: 0;
     padding: 0;
@@ -414,13 +401,13 @@ main{
     white-space: nowrap;
     animation: glisse 800ms 500ms ease-in-out forwards;    /* Animation (voir plus haut, ligne 8)*/
 }
-#glisse_num [x-apple-data-detectors] {
-    color: white !important;
+a [x-apple-data-detectors] {
+    color: inherit !important;
     text-decoration: none !important;
-    /*font-size: inherit !important;
+    font-size: inherit !important;
     font-family: inherit !important;
     font-weight: inherit !important;
-    line-height: inherit !important;*/
+    line-height: inherit !important;
     }
 section h2, h3{
     text-decoration: underline;

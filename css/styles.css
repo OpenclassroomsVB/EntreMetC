@@ -41,7 +41,7 @@
     border: 1px solid green;
 }*/
 body{
-    font-family: "komika_textregular";
+    font-family: "cadmanitalic";
     /*font-weight: bold;*/
     margin: 0;
     padding: 0;
@@ -309,8 +309,8 @@ main h3, p{
     width: 30%;
 }
 #infos_contact p{               /*APPLE*/
-    text-decoration: none;
-    color: white;
+    text-decoration: none !important;
+    color: white !important;
 }
 .contact_h2{
     font-size: 100%;
@@ -389,19 +389,20 @@ main{
     padding-right: 1%;
     background-color: #585858;
     box-shadow: 0px 0px 9px 3px #585858;
-    color: white;
+    color: white !important;
+    text-decoration: none !important;
     transform: translateX(-100%);
     white-space: nowrap;
     animation: glisse 800ms 500ms ease-in-out forwards;    /* Animation (voir plus haut, ligne 8)*/
 }
-#glisse_num a [x-apple-data-detectors] {        /*APPLE*/
-    color: inherit !important;
+/*#glisse_num a [x-apple-data-detectors] {        /*APPLE*/
+    /*color: inherit !important;
     text-decoration: none !important;
     font-size: inherit !important;
     font-family: inherit !important;
     font-weight: inherit !important;
     line-height: inherit !important;
-    }
+    }*/
 section h2, h3{
     text-decoration: underline;
 }
@@ -456,7 +457,7 @@ footer a:hover{
 }
 footer p{
     margin: 0;
-    text-decoration: none;      /*APPLE*/
+    text-decoration: none !important;      /*APPLE*/
 }
 /*----------- Responsive Tablettes - paysage (max-width 1024px)--------------*/
 @media all and (max-width: 1024px){

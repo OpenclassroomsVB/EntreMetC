@@ -310,7 +310,7 @@ main h3, p{
 }
 #infos_contact p{               /*APPLE*/
     text-decoration: none !important;
-    color: white !important;
+    color: black !important;
 }
 .contact_h2{
     font-size: 100%;

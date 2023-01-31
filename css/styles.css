@@ -1,34 +1,6 @@
 /* ------------------------------ Document de style css ------------------------------ */
 
 /* ------------------------------   Styles principaux   ------------------------------ */
-@font-face {
-    font-family: 'komika_textregular';
-    src: url('../fonts/KOMTXT__-webfont.eot');
-    src: url('../fonts/KOMTXT__-webfont.eot?#iefix') format('embedded-opentype'),
-         /*url('../fonts/KOMTXT__-webfont.woff2') format('woff2'),*/
-         url('../fonts/KOMTXT__-webfont.woff') format('woff'),
-         url('../fonts/KOMTXT__-webfont.ttf') format('truetype'),
-         url('../fonts/KOMTXT__-webfont.svg#komika_textregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'cadmanitalic';
-    src: url('../fonts/Cadman_Italic-webfont.eot');
-    src: url('../fonts/Cadman_Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         /*url('../fonts/Cadman_Italic-webfont.woff2') format('woff2'),*/
-         url('../fonts/Cadman_Italic-webfont.woff') format('woff'),
-         url('../fonts/Cadman_Italic-webfont.ttf') format('truetype'),
-         url('../fonts/Cadman_Italic-webfont.svg#cadmanitalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-/*@font-face{     /* Police de caractère */
-    /*font-family: "DCC - Sharp Distress Black";
-    src: url("../fonts/Segoe print");
-}*/
 @keyframes glisse{      /* Animation sur div id="gliss_num" (voir plus bas, ligne 376)*/
     0%{
         margin-left: 0%;
@@ -37,12 +9,8 @@
         margin-left: 100%;
     }
 }
-/**{
-    border: 1px solid green;
-}*/
 body{
-    font-family: "cadmanitalic";
-    /*font-weight: bold;*/
+    font-family : "Kalam";
     margin: 0;
     padding: 0;
 }
